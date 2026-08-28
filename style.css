@@ -1,0 +1,21 @@
+body *{
+    padding: 5px;
+    margin: 5px ;
+}
+p{
+    font-size: 24px;
+}
+img {
+    display: block;;
+}
+table {
+    table-layout: fixed;
+    border-collpase: collapse;
+    width: 70%;
+}
+th {
+    border: 1px solid;
+}
+td { 
+    border: 1px solid;
+}

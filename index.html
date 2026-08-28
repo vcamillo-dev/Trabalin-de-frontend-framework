@@ -2,105 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Acadêmico
+  </title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1> Meu nome é Vinicius Camillo</h1>
-    <p>Tenho 27 anos e estou no 2º semestre de ADS na Nassau e no 7º periodo de computação aplicada na UFRN</p>
-    <ul>
-        <li>SpringBoot</li>
-        <li>Banco de dados</li>
-        <li>Visão computacional</li>
-    </ul>
-    <img src="Eu.png" width="350" height="300" alt="Minha foto profissional">
-    <br>
-    <br>
-    <table>
-  <!-- The Header Row -->
-  <tr>
-    <th>|Materias|</th>
-    <th>|Nome do professor|</th>
-    <th>|Dia</th>
-  </tr>
-  
-  <!-- Data Row 1 -->
-  <tr>
-    <td>Dev app para internet|</td>
-    <td>Felipe Oliveira</td>
-    <td>|Segunda Feira|</td>
-  </tr>
-  
-  <!-- Data Row 2 -->
-  <tr>
-    <td>|Banco de dados|</td>
-    <td>|Diego Andrde|</td>
-    <td>|Segunda-Feira|</td>
-  </tr>
-  <tr>
-    <td>|Interdisciplinar|</td>
-    <td>|Edjane Mikely|</td>
-    <td>|Terça-Feira|</td>
-  </tr>
-  <tr>
-    <td>|Eng.Requisitos|</td>
-    <td>|Amadeu Neto|</td>
-    <td>|Terça-Feira|</td>
-  </tr>
-  <tr>
-    <td>|IA aplicada|</td>
-    <td>|Online|</td>
-    <td>|Quarta-Feira|</td>
-  </tr>
-  <tr>
-    <td>|Coding|</td>
-    <td>|Matheus Tenório|</td>
-    <td>|Quinta-Feira|</td>
-  </tr>
-  <tr>
-    <td>|Coding|</td>
-    <td>|Matheus Tenório</td>
-    <td>|Sexta-Feira|</td>
-  </tr>
-  <tr>
-    <td>|Front-end|</td>
-    <td>|Wendel|</td>
-    <td>|Sexta-Feira|</td>
-  </tr> 
-</table>
+  <h1> Meu nome é Vinicius Camillo</h1>
+  <p>Tenho 27 anos e estou no 2º semestre de ADS na Nassau e no 7º periodo de computação aplicada na UFRN</p>
+  <ul>
+    <li>SpringBoot</li>
+    <li>Banco de dados</li>
+    <li>Visão computacional</li>
+  </ul>
+  <img src="Eu.png" width="350" height="300" alt="Minha foto profissional">
+  <br>
+  <br>
+  <table>
+    <!-- The Header Row -->
+    <tr>
+      <th>Materias</th>
+      <th>Nome do professor</th>
+      <th>Dia</th>
+    </tr>
 
-<br>
-<br>
- <form>
-    <input required type="text" value="Insira seu nome aqui:" Insira seu nome aqui:> 
-    <input required type="email" value="Insira seu nome aqui:" Insira seu nome aqui:> 
+    <!-- Data Row 1 -->
+    <tr>
+      <td>Dev app para internet</td>
+      <td>Felipe Oliveira</td>
+      <td>Segunda Feira</td>
+    </tr>
+
+    <!-- Data Row 2 -->
+    <tr>
+      <td>Banco de dados</td>
+      <td>Diego Andrde</td>
+      <td>Segunda-Feira</td>
+    </tr>
+    <tr>
+      <td>Interdisciplinar</td>
+      <td>Edjane Mikely</td>
+      <td>Terça-Feira</td>
+    </tr>
+    <tr>
+      <td>Eng.Requisitos</td>
+      <td>Amadeu Neto</td>
+      <td>Terça-Feira</td>
+    </tr>
+    <tr>
+      <td>IA aplicada</td>
+      <td>Online</td>
+      <td>Quarta-Feira</td>
+    </tr>
+    <tr>
+      <td>Coding</td>
+      <td>Matheus Tenório</td>
+      <td>Quinta-Feira</td>
+    </tr>
+    <tr>
+      <td>Coding</td>
+      <td>Matheus Tenório</td>
+      <td>Sexta-Feira</td>
+    </tr>
+    <tr>
+      <td>Front-end</td>
+      <td>Wendel</td>
+      <td>Sexta-Feira</td>
+    </tr>
+  </table>
+  <form>
+    <P>
+      Breve formulario :
+    </P>
+    <input required type="text" value="Insira seu nome aqui:" Insira seu nome aqui:>
+    <br>
+    <input required type="email" value="Insira seu email aqui:" Insira seu email aqui:>
+    <br>
+    <label for="cursos"></label>
+    <p> Selecionse seu curso:</p>
+  <select name="cursos" id="cursos" required>
+    <option value="" disabled selected>Select an option...</option>
+    <option value="Ads">Analise e desenvolvimento de sistemas</option>
+    <option value="Direito">Direito</option>
+    <option value="Ed.Fisica">Ed.Fisica</option>
+    <option value="Psicologia">Psicologia</option>
+  </select>
+   <p>Qual turno você estuda?</p>
+    <input type="radio" id="matutino" name="matutino">
+    <label for="matutino">matutino</label><br>
+    <input type="radio" id="vespertino" name="vespertino">
+    <label for="vespertino">vespertino</label><br><br>
+    <label for="feedback">Algum comentario?</label>
+    <br>
+    <textarea id="feedback" name="feedback" rows="4" cols"50">Insira aqui sua mensagem</textarea>
+    <br>
+    <button type="submit">Submit</button>
   </form>
-  <br>
-  <br>  
-  <label for="cursos">Selcione seu curso:</label>
-<select name="cursos" id="cursos" required>
-  <option value="" disabled selected>Select an option...</option>
-  <option value="Ads">Analise e desenvolvimento de sistemas</option>
-  <option value="Direito">Direito</option>
-  <option value="Ed.Fisica">Ed.Fisica</option>
-  <option value="Psicologia">Psicologia</option>
-</select>
-<form>
-  <p>Qual turno você estuda?</p>
-  
-  <input type="radio" id="matutino" name="matutino" >
-  <label for="matutino">matutino</label><br>
-
-  <input type="radio" id="vespertino" name="vespertino" >
-  <label for="vespertino">vespertino</label><br><br>
-  <label for="feedback">Algum comentario?</label>
-  <br>
-  <textarea id="feedback" name="feedback" rows="4" cols"50">Insira aqui sua mensagem</textarea>
-<br>
-<button type="submit">Submit</button>
-
-</form>
 </body>
+
 </html>
