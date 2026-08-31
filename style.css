@@ -1,3 +1,7 @@
+body{
+    background-color: #060b18;
+    color: #e6edf3
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -13,21 +17,21 @@
     }
 }
 .sidebar{
-    background-color: red;
     padding-inline: 24px;
-}
-.picture-figure{
-    background-color: green;
+    border:1px solid grey;
 }
 img{
     max-width: 100%;
     height:auto;
     display:block;
+    border-radius: 20%;
+}
+a{
+    color:white;
 }
 main{
     border: 1px solid grey;
     padding-inline:24px;
-
 }
 .aboutme-line, .projects-line, .history-line{
     height:2px;
