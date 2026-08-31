@@ -1,84 +1,35 @@
-body {
-    padding: 5px;
-    margin: 5px ;
-    display:flex;
-    text-align: left;
-    align-items: center;
+.container {
+    display: flex;
     flex-direction: column;
-
+    padding:8px;
+    gap:32px;
 }
-ul{
-    text-align: left;
-    display: inline-block;
-    font-size: 18px;
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap:32px;
+    }
+}
+.sidebar{
+    background-color: red;
+    padding-inline: 24px;
+}
+.picture-figure{
+    background-color: green;
 }
 img{
+    max-width: 100%;
+    height:auto;
     display:block;
-    margin:0;
-    display: center;
 }
-p{
-    font-size: 24px;
-}
-img {
-    display: block;;
-}
-table {
-    table-layout: fixed;
-    border-collapse: collapse;
-    width: 40%;
-}
-th {
-    border: 1px solid;
-    margin: 4px;
-    padding: 4px;
-}
-td { 
-    border: 1px solid;
-    margin:4px;
-    padding:4px
-}
-.segunda{
-    background-color: #5bcefa;
-}
-.terca{
-    background-color: #f5a9b8;
+main{
+    border: 1px solid grey;
+    padding-inline:24px;
 
-}.quarta{
-    background-color: white;
 }
-.quinta{
-    background-color: #f5a9b8;
-}
-.sexta{
-    background-color: #5bcefa;
-}
-form{
-    border:1px solid;
-    margin:8px;
-    padding: 4px;
-    width: 100%;
-    max-width: 400px;
-
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.radio-group{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    width: fit-content;
-}
-.radio-group label {
-    cursor: pointer;
-    margin: 2px 0;
-}
-#form-button{
-    margin :8px;
-}
-#feedback{
-    width: 80%;
+.aboutme-line, .projects-line, .history-line{
+    height:2px;
+    background-color: grey;
 }

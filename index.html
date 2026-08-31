@@ -4,110 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil Acadêmico
-  </title>
+  <title>Perfil Acadêmico</title>
+  <meta name="description" content="Perfil Acadêmico e  portfolio de projetos de Vinicius Camillo">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1> Meu nome é Vinicius Camillo</h1>
-  <p>Tenho 27 anos e estou no 2º semestre de ADS na Nassau e no 7º periodo de computação aplicada na UFRN</p>
-  <ul>
-    <li>SpringBoot</li>
-    <li>Banco de dados</li>
-    <li>Visão computacional</li>
-  </ul>
-  <img src="Eu.png" width="350" height="300" alt="Minha foto profissional">
-  <br>
-  <table>
-    <!-- The Header Row -->
-    <tr>
-      <th>Materias</th>
-      <th>Nome do professor</th>
-      <th>Dia</th>
-    </tr>
+  <!-- Perfil / barra lateral -->
+  <div class="container">
+    <aside class="sidebar">
+      <figure class="picture-figure">
+        <img src="Eu.png" alt="Minha foto profissional">
+      </figure>
+      <h1>Vinicius Camillo</h1>
+      <p class="profile-title">Estudante de ADS (Uninassau) & C&T - Computação Aplicada (UFRN)</p>
+      <p class="profile-bio">Insira a bio aqui</p>
 
-    <!-- Data Row 1 -->
-    <tr class="segunda">
-      <td>Dev app para internet</td>
-      <td>Felipe Oliveira</td>
-      <td>Segunda Feira</td>
-    </tr>
+      <ul>
+        <li>Natal/Rn</li>
+        <li>Viniciuscamillodev@gmail.com</li>
+        <li> <a href="https://github.com/vcamillo-dev">Github</a> </li>
+      </ul>
+    </aside>
 
-    <!-- Data Row 2 -->
-    <tr class="segunda">
-      <td>Banco de dados</td>
-      <td>Diego Andrde</td>
-      <td>Segunda-Feira</td>
-    </tr>
-    <tr class="terca">
-      <td>Interdisciplinar</td>
-      <td>Edjane Mikely</td>
-      <td>Terça-Feira</td>
-    </tr>
-    <tr class="terca">
-      <td>Eng.Requisitos</td>
-      <td>Amadeu Neto</td>
-      <td>Terça-Feira</td>
-    </tr>
-    <tr class="quarta">
-      <td>IA aplicada</td>
-      <td>Online</td>
-      <td>Quarta-Feira</td>
-    </tr>
-    <tr class="quinta">
-      <td>Coding</td>
-      <td>Matheus Tenório</td>
-      <td>Quinta-Feira</td>
-    </tr>
-    <tr class="sexta">
-      <td>Coding</td>
-      <td>Matheus Tenório</td>
-      <td>Sexta-Feira</td>
-    </tr>
-    <tr class="sexta">
-      <td>Front-end</td>
-      <td>Wendel</td>
-      <td>Sexta-Feira</td>
-    </tr>
-  </table>
-  <br>
-  <br>
-  <form>
-    <form>
-      <form>
-        <p>Breve formulário:</p>
+    <main>
+      <section>
+        <h2>Sobre Mim:</h2>
+        <hr class="aboutme-line">
+      </section>
 
-        <label for="nome">Nome:</label><br>
-        <input required type="text" id="nome" name="nome" placeholder="Insira seu nome aqui"><br><br>
+      <section>
+        <h2>Projetos no qual participei:</h2>
+        <hr class="projects-line">
+      </section>
 
-        <label for="email">E-mail:</label><br>
-        <input required type="email" id="email" name="email" placeholder="Insira seu e-mail aqui"><br><br>
+      <section>
+        <h2>Historico profissional e Acadêmico</h2>
+        <hr class="history-line">
+      </section>
 
-        <p>Selecione seu curso:</p>
-        <select name="cursos" id="cursos" required>
-          <option value="" disabled selected>Selecione uma opção...</option>
-          <option value="Ads">Análise e Desenvolvimento de Sistemas</option>
-          <option value="Direito">Direito</option>
-          <option value="Ed.Fisica">Educação Física</option>
-          <option value="Psicologia">Psicologia</option>
-        </select>
+    </main>
+  </div>
 
-        <p>Qual turno você estuda?</p>
-
-        <div class="radio-group">
-          <label><input type="radio" id="matutino" name="turno" value="matutino"> Matutino</label>
-          <label><input type="radio" id="vespertino" name="turno" value="vespertino"> Vespertino</label>
-        </div>
-
-        <p id="comment-form">Algum comentário?</p>
-        <textarea id="feedback" name="feedback" rows="4" cols="50"
-          placeholder="Insira aqui sua mensagem"></textarea><br>
-
-        <button id="form-button" type="submit">Enviar</button>
-      </form>
-    </form>
-  </form>
 </body>
 
 </html>
