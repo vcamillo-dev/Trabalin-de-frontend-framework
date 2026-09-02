@@ -7,6 +7,7 @@
   <title>Perfil Acadêmico</title>
   <meta name="description" content="Perfil Acadêmico e  portfolio de projetos de Vinicius Camillo">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -16,10 +17,14 @@
       <figure class="picture-figure">
         <img src="Eu.png" alt="Minha foto profissional">
       </figure>
-      <h1>Vinicius Camillo</h1>
-      <p>C&T - Computação Aplicada (UFRN)</p>
-      <p class="profile-title">Analise Desenvolvimento de Sistemas (Uninassau)</p>
-
+      <div class="sidebar-info">
+        <h1 class="name">Vinicius Camillo</h1>
+        <div class="course-box">
+          <h2 class="course-head">Cursando:</h2>
+          <p class="course">C&T - Computação Aplicada (UFRN)</p>
+          <p class="course">Analise Desenvolvimento de Sistemas (Uninassau)</p>
+        </div>
+      </div>   
       <ul class="list">
         <li class="contact-item">
           <!-- Ícone de E-mail (SVG) -->
@@ -42,7 +47,7 @@
 
     <main>
       <section>
-        <h2>Sobre Mim:</h2>
+        <h2 class="main-title">Quem sou eu?</h2>
         <p>Desenvolvedor de Software e graduando em Engenharia da Computação (UFRN) e Análise e Desenvolvimento de
           Sistemas (Uninassau). Atuo no desenvolvimento de soluções web e sistemas na Empresa Júnior (NassauSoft) e como
           pesquisador em Iniciação Científica focada em Visão Computacional e Inteligência Artificial aplicadas à saúde.
@@ -71,9 +76,12 @@
           mapeamento na escala clínica MDS-UPDRS via estatística (Pearson, Wilcoxon, Shapiro-Wilk).</p>
         <hr class="history-line">
       </section>
-
     </main>
   </div>
+  <!-- mt=margin-top / max-w-6xl = max width 6xl(1152px) mx-auto=margin horizontal auto/ px= padding horizontal / sm:px-8=smallscreen padding(32px)-->
+  <section class="mt-8 max-w-6xl mx-auto px-4 sm:px-8">
+    <h2 class="text-xl font-semibold text-[#e6edf3] mb-4">Projetos</h2>
+  </section>
 
 </body>
 
