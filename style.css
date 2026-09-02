@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     background-color: #060b18;
-    color: #e6edf3
+    color: #e6edf3;
 }
 
 .container {
@@ -8,7 +12,6 @@ body {
     flex-direction: column;
     padding: 0.5rem;
     gap: 2rem;
-
 }
 
 @media (min-width: 48rem) {
@@ -17,16 +20,18 @@ body {
         grid-template-columns: 16rem 1fr;
         gap: 2rem;
         max-width: 72rem;
-        margin-inline:auto;
+        margin-inline: auto;
         padding-inline: 2rem;
         padding-top: 4rem;
         padding-bottom: 0.5rem;
     }
 }
-.sidebar-info{
+
+.sidebar-info {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -34,19 +39,34 @@ img {
     border-radius: 20%;
     margin-top: 0;
 }
-.course-box{
-    border:1px solid #1c2a4a;
+
+.course-box {
+    border: 1px solid #1c2a4a;
+    border-radius: 8px;
+    padding: 0.75rem;
+    background-color: rgba(11, 19, 43, 0.4);
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
 }
-.course-head{
-    font-size: 1.2rem;
+
+.course-head {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e6edf3;
+    margin-bottom: 0.5rem;
 }
-.course{
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+
+.course {
+    font-size: 0.875rem;
+    color: #8e9aaf;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
-.name,
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 .list {
     list-style: none;
@@ -76,33 +96,79 @@ a {
 }
 
 main {
-    border: 1px solid grey;
-    padding-inline: 24px;
+    border: 1px solid #1c2a4a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: rgba(11, 19, 43, 0.2);
 }
 
 .main-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+.history-title{
+    font-size:1.5rem;
+    margin-bottom: 1rem;
+}
 
 .aboutme-line,
 .projects-line,
 .history-line {
-    height: 2px;
-    background-color: grey;
+    height: 1px;
+    border: none;
+    background-color: #1c2a4a;
     margin-top: 1rem;
-    margin-bottom:1rem
+    margin-bottom: 1rem;
 }
 
 .fluxo-item {
     display: flex;
     flex-direction: column;
     padding-bottom: 1.0rem;
-    max-width: 60ch;
+    width: 100%;
 }
 
 .fluxo-item::after {
     content: "↓";
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #8e9aaf;
+    margin-top: 0.5rem;
+}
+
+@layer components {
+  /* Container do Carrossel */
+  .carousel-container {
+    scroll-snap-type: x mandatory;
+    padding-inline: calc(50% - 9rem); /* Cria espaço dinâmico suficiente para centralizar o 1º e último card */
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .carousel-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+  }
+
+  /* Card com Animação de Relevo por Scroll */
+  .project-card {
+    scroll-snap-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    animation: center-highlight linear both;
+    animation-timeline: view(inline);
+    animation-range: cover 0% cover 100%;
+  }
+
+  @keyframes center-highlight {
+    0%, 100% {
+      transform: scale(0.85);
+      opacity: 0.4;
+      filter: brightness(0.6);
+    }
+    50% {
+      transform: scale(1.08);
+      opacity: 1;
+      filter: brightness(1);
+      box-shadow: 0 10px 25px -5px rgba(28, 42, 74, 0.6), 
+                  0 0 15px rgba(230, 237, 243, 0.1);
+    }
+  }
 }

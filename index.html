@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfil Acadêmico</title>
-  <meta name="description" content="Perfil Acadêmico e  portfolio de projetos de Vinicius Camillo">
+  <meta name="description" content="Perfil Acadêmico e portfolio de projetos de Vinicius Camillo">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -22,9 +22,9 @@
         <div class="course-box">
           <h2 class="course-head">Cursando:</h2>
           <p class="course">C&T - Computação Aplicada (UFRN)</p>
-          <p class="course">Analise Desenvolvimento de Sistemas (Uninassau)</p>
+          <p class="course">Análise e Dev. de Sistemas (Uninassau)</p>
         </div>
-      </div>   
+      </div>
       <ul class="list">
         <li class="contact-item">
           <!-- Ícone de E-mail (SVG) -->
@@ -56,16 +56,8 @@
         <hr class="aboutme-line">
       </section>
 
-      <!--
       <section>
-        <h2>Projetos no qual participei:</h2>
-        <hr class="projects-line">
-      </section>
-      -->
-
-      <section>
-        <h2>Historico profissional e Acadêmico</h2>
-
+        <h2 class="history-title">Histórico Profissional e Acadêmico</h2>
         <p class="fluxo-item">Introdução da robótica educacional em escolas públicas e comunidades carentes, fornecendo
           suporte técnico no desenvolvimento de código para sistemas embarcados (Arduino e ESP32) e modelagem/impressão
           3D de peças robóticas.</p>
@@ -78,11 +70,210 @@
       </section>
     </main>
   </div>
-  <!-- mt=margin-top / max-w-6xl = max width 6xl(1152px) mx-auto=margin horizontal auto/ px= padding horizontal / sm:px-8=smallscreen padding(32px)-->
-  <section class="mt-8 max-w-6xl mx-auto px-4 sm:px-8">
-    <h2 class="text-xl font-semibold text-[#e6edf3] mb-4">Projetos</h2>
+
+  <!-- Seção de Projetos -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-8 mt-12">
+    <h2 class="text-2xl font-semibold text-[#e6edf3] mb-4 text-center">Projetos</h2>
+    <div id="carousel-wrapper" class="relative group overflow-hidden py-4">
+
+      <!-- Seta Esquerda -->
+      <button id="scroll-left" aria-label="Rolar projetos para a esquerda"
+        class="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-[#0b132b]/90 hover:bg-[#1c2a4a] text-[#e6edf3] p-3 rounded-full border border-[#1c2a4a] backdrop-blur-sm transition-all duration-300 shadow-lg cursor-pointer">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Container do Carrossel -->
+      <div id="carousel"
+        class="carousel-container flex flex-row items-center gap-6 overflow-x-auto overflow-y-hidden pb-8 pt-8 scroll-smooth">
+        
+        <!-- CARD 1 -->
+        <article
+          class="project-card flex-none w-72 bg-[#060b18] border border-[#1c2a4a] rounded-lg overflow-hidden flex flex-col">
+          <div class="w-full h-44 relative bg-black overflow-hidden">
+            <iframe src="https://seu-projeto.vercel.app" scrolling="no" tabindex="-1"
+              class="w-full h-full border-none pointer-events-none select-none"></iframe>
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-base font-medium text-[#e6edf3] mb-1">Nome do Projeto 1</h3>
+            <p class="text-xs text-[#8e9aaf] mb-4 flex-grow">Descrição do sistema.</p>
+            <a href="#" class="text-xs text-white hover:underline mt-auto">Acessar Projeto ↗</a>
+          </div>
+        </article>
+
+        <!-- CARD 2: Minox Bros -->
+        <article
+          class="project-card flex-none w-72 bg-[#060b18] border border-[#1c2a4a] rounded-lg overflow-hidden flex flex-col">
+          <div class="w-full h-44 relative bg-black overflow-hidden">
+            <iframe src="https://minox-bros.vercel.app/dashboard" scrolling="no" tabindex="-1"
+              class="w-full h-full border-none pointer-events-none select-none"></iframe>
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-base font-medium text-[#e6edf3] mb-1">Minox Bros</h3>
+            <p class="text-xs text-[#8e9aaf] mb-4 flex-grow">Tracking de rotina para cosméticos</p>
+            <a href="https://minox-bros.vercel.app/dashboard" target="_blank" rel="noopener noreferrer"
+              class="text-xs text-white hover:underline mt-auto">Acessar Projeto ↗</a>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article
+          class="project-card flex-none w-72 bg-[#060b18] border border-[#1c2a4a] rounded-lg overflow-hidden flex flex-col">
+          <div class="w-full h-44 relative bg-black overflow-hidden">
+            <iframe src="https://seu-projeto.vercel.app" scrolling="no" tabindex="-1"
+              class="w-full h-full border-none pointer-events-none select-none"></iframe>
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-base font-medium text-[#e6edf3] mb-1">Nome do Projeto 3</h3>
+            <p class="text-xs text-[#8e9aaf] mb-4 flex-grow">Descrição do sistema.</p>
+            <a href="#" class="text-xs text-white hover:underline mt-auto">Acessar Projeto ↗</a>
+          </div>
+        </article>
+
+        <!-- CARD 4 -->
+        <article
+          class="project-card flex-none w-72 bg-[#060b18] border border-[#1c2a4a] rounded-lg overflow-hidden flex flex-col">
+          <div class="w-full h-44 relative bg-black overflow-hidden">
+            <iframe src="https://seu-projeto.vercel.app" scrolling="no" tabindex="-1"
+              class="w-full h-full border-none pointer-events-none select-none"></iframe>
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-base font-medium text-[#e6edf3] mb-1">Nome do Projeto 4</h3>
+            <p class="text-xs text-[#8e9aaf] mb-4 flex-grow">Descrição do sistema.</p>
+            <a href="#" class="text-xs text-white hover:underline mt-auto">Acessar Projeto ↗</a>
+          </div>
+        </article>
+
+        <!-- CARD 5 -->
+        <article
+          class="project-card flex-none w-72 bg-[#060b18] border border-[#1c2a4a] rounded-lg overflow-hidden flex flex-col">
+          <div class="w-full h-44 relative bg-black overflow-hidden">
+            <iframe src="https://seu-projeto.vercel.app" scrolling="no" tabindex="-1"
+              class="w-full h-full border-none pointer-events-none select-none"></iframe>
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-base font-medium text-[#e6edf3] mb-1">Nome do Projeto 5</h3>
+            <p class="text-xs text-[#8e9aaf] mb-4 flex-grow">Descrição do sistema.</p>
+            <a href="#" class="text-xs text-white hover:underline mt-auto">Acessar Projeto ↗</a>
+          </div>
+        </article>
+
+        <!-- CARD 6 -->
+        <article
+          class="project-card flex-none w-72 bg-[#060b18] border border-[#1c2a4a] rounded-lg overflow-hidden flex flex-col">
+          <div class="w-full h-44 relative bg-black overflow-hidden">
+            <iframe src="https://seu-projeto.vercel.app" scrolling="no" tabindex="-1"
+              class="w-full h-full border-none pointer-events-none select-none"></iframe>
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-base font-medium text-[#e6edf3] mb-1">Nome do Projeto 6</h3>
+            <p class="text-xs text-[#8e9aaf] mb-4 flex-grow">Descrição do sistema.</p>
+            <a href="#" class="text-xs text-white hover:underline mt-auto">Acessar Projeto ↗</a>
+          </div>
+        </article>
+
+        <!-- CARD 7 -->
+        <article
+          class="project-card flex-none w-72 bg-[#060b18] border border-[#1c2a4a] rounded-lg overflow-hidden flex flex-col">
+          <div class="w-full h-44 relative bg-black overflow-hidden">
+            <iframe src="https://seu-projeto.vercel.app" scrolling="no" tabindex="-1"
+              class="w-full h-full border-none pointer-events-none select-none"></iframe>
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-base font-medium text-[#e6edf3] mb-1">Nome do Projeto 7</h3>
+            <p class="text-xs text-[#8e9aaf] mb-4 flex-grow">Descrição do sistema.</p>
+            <a href="#" class="text-xs text-white hover:underline mt-auto">Acessar Projeto ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Seta Direita -->
+      <button id="scroll-right" aria-label="Rolar projetos para a direita"
+        class="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-[#0b132b]/90 hover:bg-[#1c2a4a] text-[#e6edf3] p-3 rounded-full border border-[#1c2a4a] backdrop-blur-sm transition-all duration-300 shadow-lg cursor-pointer">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+    </div>
   </section>
 
+  <!-- Script do Carrossel Infinito -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const carousel = document.getElementById('carousel');
+      const btnLeft = document.getElementById('scroll-left');
+      const btnRight = document.getElementById('scroll-right');
+
+      const originalCards = Array.from(carousel.children);
+      const originalCount = originalCards.length;
+
+      if (originalCount === 0) return;
+
+      // 1. Clona os cards no início e no fim para gerar a ilusão do loop
+      originalCards.forEach(card => {
+        const cloneEnd = card.cloneNode(true);
+        carousel.appendChild(cloneEnd);
+      });
+
+      originalCards.slice().reverse().forEach(card => {
+        const cloneStart = card.cloneNode(true);
+        carousel.insertBefore(cloneStart, carousel.firstChild);
+      });
+
+      const allCards = Array.from(carousel.children);
+      
+      // Medidas dos cards e espaçamento
+      const firstCard = originalCards[0];
+      const cardWidth = firstCard.offsetWidth + 24; // 288px + 24px (gap-6)
+      const singleSetWidth = originalCount * cardWidth;
+
+      // Centralização do 1º Card original
+      const alignOffset = (carousel.offsetWidth - firstCard.offsetWidth) / 2;
+      const originalStartIndex = originalCount; // O 1º card real está após o 1º conjunto clonado
+      const baseScrollPos = (originalStartIndex * cardWidth) - alignOffset;
+
+      // Define posição inicial centralizada no Projeto 1
+      carousel.style.scrollBehavior = 'auto';
+      carousel.scrollLeft = baseScrollPos;
+      carousel.style.scrollBehavior = 'smooth';
+
+      // 2. Ajuste Infinito Automático durante o Scroll
+      let isAdjusting = false;
+
+      carousel.addEventListener('scroll', () => {
+        if (isAdjusting) return;
+
+        // Se scrollou para o conjunto clonado da esquerda
+        if (carousel.scrollLeft < singleSetWidth - alignOffset - (cardWidth / 2)) {
+          isAdjusting = true;
+          carousel.style.scrollBehavior = 'auto';
+          carousel.scrollLeft += singleSetWidth;
+          carousel.style.scrollBehavior = 'smooth';
+          setTimeout(() => { isAdjusting = false; }, 50);
+        }
+        // Se scrollou para o conjunto clonado da direita
+        else if (carousel.scrollLeft > (singleSetWidth * 2) - alignOffset + (cardWidth / 2)) {
+          isAdjusting = true;
+          carousel.style.scrollBehavior = 'auto';
+          carousel.scrollLeft -= singleSetWidth;
+          carousel.style.scrollBehavior = 'smooth';
+          setTimeout(() => { isAdjusting = false; }, 50);
+        }
+      });
+
+      // 3. Botões de Navegação
+      btnLeft.addEventListener('click', () => {
+        carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      });
+
+      btnRight.addEventListener('click', () => {
+        carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 
 </html>
